@@ -1,2 +1,2 @@
-# tinaycyc-front
-This is not a yacht club yacht club front 
+# This is not a yacht club Yacht Club
+Small front end project involving Vue and FireBase. 
