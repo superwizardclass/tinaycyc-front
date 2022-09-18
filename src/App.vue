@@ -42,12 +42,12 @@ body {
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 200px auto 150px;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(min-content, max-content) auto 150px;
   grid-template-areas: 
-    "header header header"
-    ". main ."
-    "footer footer footer";
+    "header"
+    "main"
+    "footer";
   background-color: rgb(255, 144, 255);
 }
 

@@ -1,11 +1,11 @@
 <template>
     <header>
         <nav>
-            <div class="nav-links-container">
+            <div class="general-links-container">
             <ul>
-                <li>Home</li>
-                <li>Boats</li>
-                <li>Members</li>
+                <li>HOME</li>
+                <li>BOATS</li>
+                <li>MEMBERS</li>
             </ul>
             </div>
             <div class="account-links-container">
@@ -15,7 +15,6 @@
                 </ul>
             </div>
         </nav>
-        <h1>This is not a yacht club Yacht Club</h1>
     </header>
 </template>
 
@@ -28,21 +27,52 @@ export default {
 <style scoped>
     header {
         width: 100%;
+        border-bottom: 3px solid rgb(199, 199, 199);
     }
 
     nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
-        background-color: black;
-        color: white;
+        height: 100px;
+        background-color: white;
+        color: rgb(71, 71, 71);
+        font-size: 1.8rem;
+        font-weight: bold;
     }
 
-    nav ul {
+    nav .general-links-container {
+        margin-left: 20px;
+
+    }
+
+    nav .account-links-container {
+        margin-right: 20px;
+    }
+
+    nav .general-links-container ul,
+    nav .account-links-container ul {
+        display: flex;
+        gap: 20px;
         list-style-type: none;
+        padding: 0;
     }
 
-    nav ul li {
+    nav .general-links-container ul li,
+    nav .account-links-container ul li {
         display: inline;
+    }
+
+    .header-banner {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .header-banner h1 {
+        
     }
 
 </style>
